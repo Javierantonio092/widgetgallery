@@ -10,30 +10,35 @@ class AppRoute {
   static const String root = '/';
   static final List<MenuOption> listScreens = [
     MenuOption(
-        title: 'House',
-        route: '/',
-        icon: Icons.house_outlined,
-        screen: const HomeScreen()),
+      icon: Icons.house_outlined,
+      route: '/',
+      screen: const HomeScreen(),
+      title: 'House',
+    ),
     MenuOption(
-        title: 'Orders',
-        route: '/orders',
-        icon: Icons.list_outlined,
-        screen: const OrderScreen()),
+      icon: Icons.list_outlined,
+      route: '/orders',
+      screen: const OrderScreen(),
+      title: 'orders',
+    ),
     MenuOption(
-        title: 'Login',
-        route: '/login',
-        icon: Icons.login_outlined,
-        screen: const LoginScreen()),
+      icon: Icons.login_outlined,
+      route: '/login',
+      screen: const LoginScreen(),
+      title: 'Login',
+    ),
     MenuOption(
-        title: 'Profile',
-        route: '/profile',
-        icon: Icons.person_outline,
-        screen: const ProfileScreen()),
+      icon: Icons.person_outlined,
+      route: '/profile',
+      screen: const ProfileScreen(),
+      title: 'Profile',
+    ),
     MenuOption(
-        title: 'Sing Up',
-        route: '/singup',
-        icon: Icons.account_circle_outlined,
-        screen: const SingUpScreen()),
+      icon: Icons.account_circle_outlined,
+      route: '/singup',
+      screen: const SingUpScreen(),
+      title: 'Sing Up',
+    ),
   ];
 
   static Map<String, Widget Function(BuildContext)> getRoutes() {

@@ -8,23 +8,23 @@ class LoginScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.redAccent,
+      appBar: AppBar(title: const Text('Widget Gallery')),
       bottomNavigationBar: BottomMenu(
         items: AppRoute.listScreens,
-      ),
-      backgroundColor: Colors.redAccent,
-      appBar: AppBar(
-        title: const Text('Widget Gallery'),
       ),
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           mainAxisSize: MainAxisSize.min,
           children: const <Widget>[
-            FlutterLogo(size: 300),
+            FlutterLogo(
+              size: 300,
+            ),
             SizedBox(
               height: 5,
             ),
-            Text('Login screen ...'),
+            Text('Login Screen'),
           ],
         ),
       ),

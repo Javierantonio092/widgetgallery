@@ -5,7 +5,11 @@ import 'package:widgetgallery/widgets/bottom_menu.dart';
 
 class ButtonMenu extends StatelessWidget {
   final MenuOption option;
-  const ButtonMenu({Key? key, required this.option}) : super(key: key);
+
+  const ButtonMenu({
+    Key? key,
+    required this.option,
+  }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {

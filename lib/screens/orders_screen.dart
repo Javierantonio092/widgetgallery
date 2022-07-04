@@ -8,19 +8,21 @@ class OrderScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      bottomNavigationBar: BottomMenu(
-        items: AppRoute.listScreens,
-      ),
       backgroundColor: Colors.pinkAccent,
       appBar: AppBar(
         title: const Text('Widget Gallery'),
+      ),
+      bottomNavigationBar: BottomMenu(
+        items: AppRoute.listScreens,
       ),
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           mainAxisSize: MainAxisSize.max,
           children: const <Widget>[
-            FlutterLogo(size: 300),
+            FlutterLogo(
+              size: 300,
+            ),
             SizedBox(
               height: 5,
             ),
